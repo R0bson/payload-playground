@@ -33,6 +33,65 @@ export interface Media {
   id: string;
   name?: string;
   alt?: string;
+  blurhash?: string;
+  webp: {
+    filename?: string;
+    filesize?: number;
+    width?: number;
+    mimeType?: string;
+    height?: number;
+    url?: string;
+    sizes: {
+      thumbnail: {
+        filename?: string;
+        filesize?: number;
+        width?: number;
+        mimeType?: string;
+        height?: number;
+        url?: string;
+      };
+      card: {
+        filename?: string;
+        filesize?: number;
+        width?: number;
+        mimeType?: string;
+        height?: number;
+        url?: string;
+      };
+      wide_smartphone_xs: {
+        filename?: string;
+        filesize?: number;
+        width?: number;
+        mimeType?: string;
+        height?: number;
+        url?: string;
+      };
+      wide_smartphone: {
+        filename?: string;
+        filesize?: number;
+        width?: number;
+        mimeType?: string;
+        height?: number;
+        url?: string;
+      };
+      wide_tablet: {
+        filename?: string;
+        filesize?: number;
+        width?: number;
+        mimeType?: string;
+        height?: number;
+        url?: string;
+      };
+      wide_desktop: {
+        filename?: string;
+        filesize?: number;
+        width?: number;
+        mimeType?: string;
+        height?: number;
+        url?: string;
+      };
+    };
+  };
   url?: string;
   filename?: string;
   mimeType?: string;
@@ -56,7 +115,31 @@ export interface Media {
       filesize?: number;
       filename?: string;
     };
-    tablet: {
+    wide_smartphone_xs: {
+      url?: string;
+      width?: number;
+      height?: number;
+      mimeType?: string;
+      filesize?: number;
+      filename?: string;
+    };
+    wide_smartphone: {
+      url?: string;
+      width?: number;
+      height?: number;
+      mimeType?: string;
+      filesize?: number;
+      filename?: string;
+    };
+    wide_tablet: {
+      url?: string;
+      width?: number;
+      height?: number;
+      mimeType?: string;
+      filesize?: number;
+      filename?: string;
+    };
+    wide_desktop: {
       url?: string;
       width?: number;
       height?: number;
@@ -87,6 +170,7 @@ export interface Example {
   id: string;
   someField?: string;
   slider: {
+    some_meta?: string;
     title?: string;
     image: string | Media;
     caption?: string;
@@ -106,7 +190,6 @@ export interface Example {
   };
   title: string;
   someTextField: string;
-  time?: string;
   contact: string;
   pageMeta: {
     title: string;

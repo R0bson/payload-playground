@@ -16,6 +16,12 @@ const Companies: CollectionConfig = {
             name: 'name',
             type: 'text',
         },
+        {
+            name: 'form',
+            label: 'Form',
+            type: 'relationship',
+            relationTo: 'forms',
+        }
     ],
 };
 

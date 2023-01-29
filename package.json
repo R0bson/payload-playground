@@ -15,16 +15,25 @@
     "generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema"
   },
   "dependencies": {
-    "payload": "^1.5.9",
+    "@payloadcms/plugin-form-builder": "^1.0.13",
+    "@payloadcms/plugin-nested-docs": "^1.0.4",
+    "@payloadcms/plugin-search": "^1.0.0",
+    "@payloadcms/plugin-seo": "^1.0.10",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "payload": "^1.5.9",
+    "payload-blurhash-plugin": "^1.2.0",
+    "payload-hash-upload": "^1.0.0",
+    "payload-plugin-lexical": "^0.0.17",
+    "payload-webp": "../payload-plugins/payload-webp"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",
+    "@types/sharp": "^0.31.1",
+    "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.6",
     "ts-node": "^9.1.1",
-    "copyfiles": "^2.4.1",
     "typescript": "^4.8.4"
   }
 }
